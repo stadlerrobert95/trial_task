@@ -1,0 +1,34 @@
+:root{
+    --pink: #ed1848;
+    --blue-trans-begin: #1868b0;
+    --blue-trans-end: #283b8f;
+    --blue-button: #23509d;
+    --grey-text: #2a2a2a;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.menu{
+
+    color: var(--blue-button);
+    border-color: var(--blue-button);
+    border-style: solid;
+    border-width: thin;
+    padding: 0.5rem 1rem;
+
+    background: linear-gradient(to left, transparent 50%, var(--pink) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 0.5s ease-out;
+}
+
+.radius{
+    border-bottom-right-radius: 10px;
+}
+.menu:hover{
+    background-position: left bottom;
+    cursor: pointer;
+}
