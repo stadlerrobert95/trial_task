@@ -15,27 +15,26 @@
 
 
 
-<section class="search-form">
-    <form action="" method="post">
-        <div class="search-header">
-            <p>Keresés a felhasználók között: </p>
-            <p class="hint">(felhasználónévben benne van a keresett szövegrészlet)</p>
-
-            <input type="text" name="search" placeholder="keresés.." class="box">
-            <input type="submit" name="submit" value="Keresés" class="btn">
-        </div>
-    </form>
-</section>
-
-<section class="result">
-    <div class="box-container">
-        <!-- Keresés -->
-
+<section class="about-section" id="about-section">
+    <div >
+        <p >#Certified member of Hungarian Marketing Association?!</p>
+        <p class="section-header">Ezek vagyunk mi.</p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Praesent ut tortor ante. Ut pretium nec mauris ac porta.
+            Vivamus non lectus eu ipsum volutpat porttitor.
+            Phasellus augue velit, maximus sed volutpat quis,
+            sodales eget mi. In at magna fermentum enim rhoncus semper.
+            Nullam accumsan arcu nec libero molestie dapibus.
+            Curabitur finibus leo non gravida gravida.
+        </p>
+        <a href="about.php" type="button" class="menu">Rólunk</a>
+        <a href="index.php#references-section" class="menu radius">Referenciáink</a>
     </div>
+
 </section>
-<div class="link">
-    <a href="books.php">Könyvek |</a><a href="dummy_genre.php">Műfaj |</a><a href="dummy_author.php">Szerzők</a>
-</div>
+<?php include 'footer.php'
+?>
 </body>
 
 </html>

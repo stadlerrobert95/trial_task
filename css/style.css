@@ -6,29 +6,239 @@
     --grey-text: #2a2a2a;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+    overflow-x: hidden;
+}
+.top-image-1{
+    z-index: 5;
+    position: absolute;
+    transform: translate(-3rem, -1rem) rotate(10deg);
+}
+
+.top-image-2{
+    z-index:4 ;
+    position: absolute;
+    transform: translate(2rem,20rem) rotate(10deg);
+}
+
+.top-image-3{
+    z-index: 3;
+    position: absolute;
+    transform: translate(4rem, 4rem) rotate(10deg);
+}
+.blue-background{
+    background-image: linear-gradient(to right, var(--blue-trans-end),var(--blue-trans-begin), var(--blue-trans-end));
+    color: white;
+
+}
+
+.section-header {
+    font-weight: 900;
+    font-size: 3rem;
+    z-index: 1000;
+
+}
+section:not(.blue-background) .section-header {
+    background: -webkit-linear-gradient(right, var(--blue-trans-end),var(--blue-trans-begin));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: var(--grey-text);
+}
+
+.blue-background .menu {
+    color: white;
+    border-color: white;
 }
 
 .menu{
-
     color: var(--blue-button);
     border-color: var(--blue-button);
     border-style: solid;
     border-width: thin;
-    padding: 0.5rem 1rem;
-
+    padding: 0.7rem 1rem;
     background: linear-gradient(to left, transparent 50%, var(--pink) 50%);
     background-size: 200% 100%;
     background-position: right bottom;
     transition: all 0.5s ease-out;
-}
+    z-index: 6;
 
+}
+.about-image-container{
+    display: flex;
+    justify-content: center;
+    min-width: 354px;
+    padding-right: 1rem;
+}
+.about-section{
+    display: flex;
+    padding: 5% 15% 5% 5%;
+    background-color: white;
+    z-index: 1000;
+}
+.about-section-paragraph{
+    padding-bottom: 1rem;
+}
 .radius{
     border-bottom-right-radius: 10px;
 }
 .menu:hover{
     background-position: left bottom;
     cursor: pointer;
+}
+.footer-section{
+    padding: 5% 20% 5% 15%;
+}
+.footer-images{
+    justify-content: space-evenly;
+    align-content: center;
+    text-align: center;
+    display: flex;
+}
+.footer-social{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+}
+
+.footer-all-rights{
+    padding-left: 5%;
+    display: flex;
+}
+
+.header-image{
+    display: -webkit-box;
+    margin-left: auto;
+}
+
+.footer-image{
+    padding-right: 0.2rem;
+    padding-left: 0.2rem;
+    size:inherit;
+    height: initial;
+}
+
+.footer-certification-and-hsa{
+    display: inline-block;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.marketing-outsourcing-section{
+    background-image: url("../resources/slider-1.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 5% 20% 5% 15%;
+}
+
+.references-section, .awards-section{
+      padding: 5% 20% 5% 15%;
+  }
+
+.partners-section{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: white;
+    text-align: center;
+}
+
+.partners-section p{
+    padding-right: 20%;
+    padding-left: 20%;
+}
+.services-section{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    }
+
+.services-content{
+    z-index: 1;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.services{
+    padding: 0 25% 0 15%;
+}
+
+.services-paragraph{
+    padding: 0 25% 3% 15%;
+}
+.services-selected-header{
+
+    color: #23295e;
+    font-weight: 900;
+    font-size: 5rem;
+    opacity: 21%;
+}
+
+:not(.services-image).circle{
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 10rem;
+    border-color:rgba(255, 255, 255, 0.12);
+    margin-right: 10%;
+
+}
+
+.services-image{
+    width: 50px;
+    height: 50px;
+    filter: invert(1);
+    opacity: 50%;
+    display: table;
+}
+
+.circle #coding{
+    position: absolute;
+    transform: translate(220%, 140%);
+
+}
+
+.circle #design{
+    position: absolute;
+    transform: translate(-270%, 170%);
+
+}
+
+.circle #social{
+     position: absolute;
+     transform: translate(-200%, -335%);
+
+ }
+.active{
+    opacity: 100%;
+}
+
+.outsourcing-background{
+    background-image: url("../resources/oc-outsourcing-emblem-bg.png") !important;
+    background-position: center;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 22rem;
+
+}
+.services-outsourcing-image{
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    display: flex;
+    margin:10rem;
+}
+
+.services-button{
+    float: right;
+    transform: translateX(-20rem);
 }

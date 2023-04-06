@@ -3,18 +3,107 @@
 
 <head>
     <meta charset="UTF-8">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&display=swap" rel="stylesheet">
 
     <title>Főoldal</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/header-slider.css">
+    <link rel="stylesheet" type="text/css" href="css/references-slider.css">
+
+    <script src="scripts/swiper-bundle-min.js"></script>
+
 </head>
 <body>
 
-<button onclick="location.href='about.php'" type="button" class="menu">Rólunk</button>
-<button class="menu radius">Referenciáink</button>
+<img class="top-image-1" src="resources/oc-emblem-part-1.png"  width="30%" height="auto" alt=" ">
+<img class="top-image-2" src="resources/oc-emblem-part-2.png"  width="auto" height="20%" alt=" ">
+<img class="top-image-3" src="resources/oc-emblem-part-3.png"  width="auto" height="40%" alt=" ">
+<?php include 'header-slider.php'?>
+
+
+<section class="about-section" id="about-section">
+    <div class="about-image-container">
+        <img src="resources/oc-colorful-emblem.png" width="354px" height="370px" alt=" ">
+    </div>
+    <div >
+        <p >#Certified member of Hungarian Marketing Association?!</p>
+        <p class="section-header">Ezek vagyunk mi.</p>
+        <p class="about-section-paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Praesent ut tortor ante. Ut pretium nec mauris ac porta.
+            Vivamus non lectus eu ipsum volutpat porttitor.
+            Phasellus augue velit, maximus sed volutpat quis,
+            sodales eget mi. In at magna fermentum enim rhoncus semper.
+            Nullam accumsan arcu nec libero molestie dapibus.
+            Curabitur finibus leo non gravida gravida.
+        </p>
+        <a href="about.php" type="button" class="menu">Rólunk</a>
+        <a href="#references-section" class="menu radius">Referenciáink</a>
+    </div>
+
+
+</section>
+
+
+<section class="services-section blue-background" id="services-section">
+    <div class="services-content">
+        <div class="section-header services">Minden,<br> ami marketing</div>
+        <div class="services-paragraph"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Praesent ut tortor ante. Ut pretium nec mauris ac porta.
+            Vivamus non lectus eu ipsum volutpat porttitor.</div>
+        <div class="services-selected-header services" id="services-selected-header">
+            Design
+        </div>
+
+        <div class="services-paragraph design-paragraph" id="services-paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Praesent ut tortor ante. Ut pretium nec mauris ac porta.
+            Vivamus non lectus eu ipsum volutpat porttitor.
+
+        </div>
+        <a class="menu radius services-button" href="about.php">&rarr;</a>
+    </div>
+    <div class="circle">
+        <div class="services-images">
+            <img id="coding" class="services-image active" src="resources/oc-icon-coding.svg" alt="coding">
+            <img id="design" class="services-image" src="resources/oc-icon-design.svg" alt="design">
+            <img id="social" class="services-image" src="resources/oc-icon-social.svg" alt="social">
+        </div>
+    </div>
+    <script src="scripts/services.js"></script>
+
+
+</section>
+
+<section class="references-section" id="references-section">
+    <div class="section-header">JIM BEAM PROJECT</div>
+
+</section>
+
+<section class="partners-section blue-background">
+    <div class="section-header"> Ők minket válaszottak</div>
+<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Praesent ut tortor ante. Ut pretium nec mauris ac porta.
+    Vivamus non lectus eu ipsum volutpat porttitor.</p>
+
+    <?php
+    include 'references-slider.php'
+    ?>
+
+    <a class="radius menu" href="" >Ajánlat kérése, vagy mi</a>
+</section>
+
+<section class="awards-section">
+    <div class="section-header">Lorem Ipsum Flexelés</div>
+
+</section>
+
+<?php
+include 'footer.php';
+?>
 
 </body>
 
