@@ -1,6 +1,5 @@
 
 :not(.references-slide).swiper-slide {
-
     padding-top:7rem;
 }
 
@@ -11,7 +10,7 @@
 
 }
 
-:not(.references-slide).swiper {
+:not(.references-slide).header-swiper {
     width: 100%;
     position: relative;
     justify-content: right;

@@ -1,0 +1,14 @@
+.swiper.partners-swiper{
+    width: 100%;
+}
+.swiper-slide.partners-slide {
+    width: 30%;
+}
+
+.swiper-slide.partners-slide img {
+    width: 300px;
+    height: 300px;
+}
+
+.swiper.partners-slide  {
+}

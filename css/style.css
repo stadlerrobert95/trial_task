@@ -140,10 +140,23 @@ section:not(.blue-background) .section-header {
       padding: 5% 5% 5% 5%;
 
   }
-
+.references-section{
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+}
+.references-slider-container{
+    max-height: 500px;
+    padding: 0;
+}
 .awards-section{
     display: grid;
     grid-template-columns: 50% 50%;
+}
+
+.references-grid{
+    display: grid;
+    place-items: center;
 }
 
 .awards-grid-box{

@@ -11,7 +11,7 @@
     <title>Főoldal</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/header-slider.css">
-    <link rel="stylesheet" type="text/css" href="css/references-slider.css">
+    <link rel="stylesheet" type="text/css" href="css/partners-slider.css">
 
     <script src="scripts/swiper-bundle-min.js"></script>
 
@@ -25,6 +25,7 @@
 
 
 <section class="about-section" id="about-section">
+
     <div class="about-image-container">
         <img src="resources/oc-colorful-emblem.png" width="354px" height="370px" alt=" ">
     </div>
@@ -49,6 +50,7 @@
 
 
 <section class="services-section blue-background" id="services-section">
+
     <div class="services-content">
         <div class="section-header services">Minden,<br> ami marketing</div>
         <div class="services-paragraph"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -75,11 +77,25 @@
     </div>
     <script src="scripts/services.js"></script>
 
-
 </section>
 
 <section class="references-section" id="references-section">
-    <div class="section-header">JIM BEAM PROJECT</div>
+
+    <div>
+        <div class="references-grid">
+            <ul>
+                <li>Összes</li>
+                <li>Kecske</li>
+                <li>Banán</li>
+                <li>Kerékpár</li>
+            </ul>
+        </div>
+    </div>
+    <div class="references-slider-container">
+        <?php
+        include 'references-slider.php'
+        ?>
+    </div>
 
 </section>
 
@@ -90,7 +106,7 @@
     Vivamus non lectus eu ipsum volutpat porttitor.</p>
 
     <?php
-    include 'references-slider.php'
+    include 'partners-slider.php'
     ?>
 
     <a class="radius menu" href="" >Ajánlat kérése, vagy mi</a>
@@ -105,7 +121,20 @@
         <div class="section-header">Lorem Ipsum Flexelés</div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Praesent ut tortor ante. Ut pretium nec mauris ac porta.
-            Vivamus non lectus eu ipsum volutpat porttitor.</p>
+            Vivamus non lectus eu ipsum volutpat porttitor.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Praesent ut tortor ante. Ut pretium nec mauris ac porta.
+            Vivamus non lectus eu ipsum volutpat porttitor.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Praesent ut tortor ante. Ut pretium nec mauris ac porta.
+            Vivamus non lectus eu ipsum volutpat porttitor.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Praesent ut tortor ante. Ut pretium nec mauris ac porta.
+            Vivamus non lectus eu ipsum volutpat porttitor.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Praesent ut tortor ante. Ut pretium nec mauris ac porta.
+            Vivamus non lectus eu ipsum volutpat porttitor.
+        </p>
     </div>
     <div class="awards-grid-box">
         <img class=awards-image" src="resources/oc-az-ev-honlapja.png" alt="Év Honlapja" width="auto" height="50%">

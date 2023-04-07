@@ -1,7 +1,7 @@
 <link rel="stylesheet" type="text/css" href="css/swiper-min.css">
 
 <!-- Swiper -->
-<div class="swiper header-swiper blue-background">
+<div class="header-swiper header-swiper blue-background">
     <div class="swiper-wrapper">
         <div class="swiper-slide"><img class="header-image" src="resources/slider-1.jpg" alt="Image 1">
             <div class="content">
@@ -32,4 +32,3 @@
 
 <script src="scripts/header-slider.js"></script>
 
-<script src="scripts/swiper-init.js"></script>
