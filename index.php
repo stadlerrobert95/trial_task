@@ -53,9 +53,11 @@
 
     <div class="services-content">
         <div class="section-header services">Minden,<br> ami marketing</div>
-        <div class="services-paragraph"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        <div class="services-paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Praesent ut tortor ante. Ut pretium nec mauris ac porta.
-            Vivamus non lectus eu ipsum volutpat porttitor.</div>
+            Vivamus non lectus eu ipsum volutpat porttitor.
+        </div>
         <div class="services-selected-header services" id="services-selected-header">
             Design
         </div>
@@ -77,20 +79,50 @@
     </div>
     <script src="scripts/services.js"></script>
 
-</section>
 
+</section>
 <section class="references-section" id="references-section">
 
     <div>
-        <div class="references-grid">
-            <ul>
-                <li>Összes</li>
-                <li>Kecske</li>
-                <li>Banán</li>
-                <li>Kerékpár</li>
-            </ul>
+        <div class="references-grid" id="references-grid">
+            <nav>
+                <ul class="references-menu">
+                    <li class="references-menu-elements"><a href="#!">Összes</a></li>
+                    <li class="references-menu-elements"><a href="#!">Design</a></li>
+                    <li class="references-menu-elements"><a href="#!">Rebrand</a></li>
+
+                </ul>
+            </nav>
+            <div class="references-content active-references-content">
+                <div class="references-content-tags">#design</div>
+                <div class="references-content-header section-header">Jim Beam</div>
+                <div class="references-content-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Praesent ut tortor ante. Ut pretium nec mauris ac porta.
+                    Vivamus non lectus eu ipsum volutpat porttitor.</div>
+                <a class="menu radius services-button" href="about.php">&rarr;</a>
+
+            </div>
+            <div class="references-content">
+                <div class="references-content-tags">#rebrand</div>
+                <div class="references-content-header section-header">Ferrari</div>
+                <div class="references-content-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Praesent ut tortor ante. Ut pretium nec mauris ac porta.
+                    Vivamus non lectus eu ipsum volutpat porttitor.</div>
+                <a class="menu radius services-button" href="about.php">&rarr;</a>
+
+            </div>
+            <div class="references-content">
+                <div class="references-content-tags">#design #rebrand</div>
+                <div class="references-content-header section-header">Dzsim Bím</div>
+                <div class="references-content-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Praesent ut tortor ante. Ut pretium nec mauris ac porta.
+                    Vivamus non lectus eu ipsum volutpat porttitor.</div>
+                <a class="menu radius services-button" href="about.php">&rarr;</a>
+
+            </div>
         </div>
     </div>
+    <script src="scripts/references-filter.js"></script>
     <div class="references-slider-container">
         <?php
         include 'references-slider.php'
