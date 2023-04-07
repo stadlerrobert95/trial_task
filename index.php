@@ -18,6 +18,7 @@
 </head>
 <body>
 
+<!--TODO Animation -->
 <img class="top-image-1" src="resources/oc-emblem-part-1.png"  width="30%" height="auto" alt=" ">
 <img class="top-image-2" src="resources/oc-emblem-part-2.png"  width="auto" height="20%" alt=" ">
 <img class="top-image-3" src="resources/oc-emblem-part-3.png"  width="auto" height="40%" alt=" ">
@@ -145,6 +146,8 @@
 </section>
 
 <section class="awards-section">
+
+    <!--TODO Animation and pictures-->
     <div class="awards-grid-box">
         <img class="flex-image" src="resources/flextime-bg.jpg" alt="flexing" width="100%" height="auto">
     </div>
