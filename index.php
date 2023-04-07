@@ -97,8 +97,30 @@
 </section>
 
 <section class="awards-section">
-    <div class="section-header">Lorem Ipsum Flexelés</div>
-
+    <div class="awards-grid-box">
+        <img class="flex-image" src="resources/flextime-bg.jpg" alt="flexing" width="100%" height="auto">
+    </div>
+    <div>
+        <p>#flextime<br></p>
+        <div class="section-header">Lorem Ipsum Flexelés</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Praesent ut tortor ante. Ut pretium nec mauris ac porta.
+            Vivamus non lectus eu ipsum volutpat porttitor.</p>
+    </div>
+    <div class="awards-grid-box">
+        <img class=awards-image" src="resources/oc-az-ev-honlapja.png" alt="Év Honlapja" width="auto" height="50%">
+        <div>
+            <p class="awards-paragraph">Az év honlapja</p>
+            <p>2021, 2022 - damsz.hu Egyszerű. Rugalmas. Naprakész</p>
+        </div>
+    </div>
+    <div class="awards-grid-box">
+        <img class=awards-image" src="resources/oc-marketing-diamond.png" alt="Marketing gyémánt" width="auto" height="50%">
+        <div>
+            <p class="awards-paragraph">Markeding Diamond</p>
+            <p>2022 - MELÓ-DIÁK presents: Valmar x Astronaut</p>
+        </div>
+    </div>
 </section>
 
 <?php

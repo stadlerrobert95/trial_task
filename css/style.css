@@ -75,7 +75,7 @@ section:not(.blue-background) .section-header {
 }
 .about-section{
     display: flex;
-    padding: 5% 15% 5% 5%;
+    padding: 5% 5% 5% 5%;
     background-color: white;
     z-index: 1000;
 }
@@ -90,7 +90,7 @@ section:not(.blue-background) .section-header {
     cursor: pointer;
 }
 .footer-section{
-    padding: 5% 20% 5% 15%;
+    padding: 5% 5% 5% 5%;
 }
 .footer-images{
     justify-content: space-evenly;
@@ -133,16 +133,43 @@ section:not(.blue-background) .section-header {
     background-image: url("../resources/slider-1.jpg");
     background-position: center;
     background-size: cover;
-    padding: 5% 20% 5% 15%;
+    padding: 5% 5% 5% 5%;
 }
 
 .references-section, .awards-section{
-      padding: 5% 20% 5% 15%;
+      padding: 5% 5% 5% 5%;
+
   }
+
+.awards-section{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.awards-grid-box{
+    display: flex;
+    padding-right: 10%;
+    align-items: center;
+}
+
+img.awards-image\" {
+    margin: 5%;
+}
+
+.awards-paragraph {
+    background: -webkit-linear-gradient(right, var(--blue-trans-end),var(--blue-trans-begin));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+}
+
+.flex-image{
+    transform: translateY(-6rem);
+}
 
 .partners-section{
     padding-top: 5%;
-    padding-bottom: 5%;
+    padding-bottom: 7%;
     background-color: white;
     text-align: center;
 }
@@ -150,6 +177,7 @@ section:not(.blue-background) .section-header {
 .partners-section p{
     padding-right: 20%;
     padding-left: 20%;
+
 }
 .services-section{
     padding-top: 5%;
